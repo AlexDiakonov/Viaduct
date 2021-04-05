@@ -1,0 +1,180 @@
+.projPAge_header {
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../images/projPage/projPageHeader.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 865px;
+  padding-bottom: 65px;
+}
+.projPAge_header_long {
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../images/longRead/Rectangle\ 3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 865px;
+  padding-bottom: 65px;
+}
+.header_wrapper {
+  width: 1420px;
+  margin: 0 auto;
+}
+.projectPage_subtitle {
+  font-size: 64px;
+  opacity: 0.5;
+}
+.projectPage_image_long {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 65px;
+}
+.projectPage_image {
+  width: 600px;
+  display: block;
+  margin: 0 auto 55px auto;
+}
+.projectPage_subtitle {
+  max-width: 1000px;
+  margin-bottom: 35px;
+}
+.category_container {
+  display: flex;
+}
+
+.category_container li:not(:last-child) {
+  margin-right: 8px;
+}
+.category_container_link {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+.project_desrpt_text {
+  max-width: 950px;
+  margin-bottom: 115px;
+}
+.technoProj {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+.webSite_wrapper_link {
+  font-size: 28px;
+  line-height: 36px;
+}
+.webSite_wrapper_link::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+  background-image: url("../images/projPage/objectIcon.svg");
+}
+.project_desrpt {
+  padding: 120px 0px;
+}
+.presi_video {
+  width: 100%;
+  border-radius: 10px;
+  height: 785px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/projPage/ProjVideoimg.png");
+}
+.presi_videoLong {
+  width: 100%;
+  border-radius: 10px;
+  height: 785px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/longRead/Rectangle\ 7.png");
+}
+.presi {
+  padding-bottom: 120px;
+}
+.relatedProj_title {
+  margin-bottom: 60px;
+}
+.readingSect_textWrapper {
+  max-width: 576px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.readingSect_small_title {
+  margin-bottom: 63px;
+}
+.readingSect_smallP {
+  font-size: 28px;
+  line-height: 40px;
+}
+.readingSect_smImgCont {
+  max-width: 696px;
+  width: 100%;
+  background-color: #436f5f;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.readingSect_Wrp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.iterface_group {
+  display: flex;
+  padding: 78px 0;
+  max-width: 1415px;
+  width: 100%;
+  justify-content: center;
+  background: #436f5f;
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+
+.imgWrap2 {
+  max-height: 606px;
+}
+.imgWrap2:not(:last-child) {
+  margin-right: 54px;
+}
+.screen {
+  height: 100%;
+}
+.readingSect_md_title {
+  margin-bottom: 64px;
+}
+.headingThree_content_wrapper {
+  max-width: 1040px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+.double_singleScreenWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+.single_Interface {
+  margin-bottom: 56px;
+  max-width: 1415px;
+  background: #436f5f;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 75px 0;
+}
+.reverse_to_oposite {
+  flex-direction: row-reverse;
+}

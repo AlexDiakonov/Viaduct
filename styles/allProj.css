@@ -1,0 +1,113 @@
+.all_projects {
+  width: 1420px;
+  margin: 0 auto;
+}
+.projects_categories {
+  margin-bottom: 135px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project_filter {
+  font-size: 64px;
+  color: white;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+.project_quantity {
+  opacity: 0.5;
+}
+.project_filterItem:hover .project_filter,
+.project_filterItem:hover .project_quantity {
+  opacity: 1;
+}
+.project_filterItem {
+  display: flex;
+}
+.project_filterItem:not(:last-child) {
+  margin-right: 60px;
+}
+.proj_header {
+  margin-bottom: 120px;
+}
+.project_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project_item {
+  width: 696px;
+  height: 377px;
+}
+.sleeperPJ {
+  background-image: url("../images/allProjects/sleeper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.modelPJ {
+  background-image: url("../images/allProjects/modelFa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rookiePJ {
+  background-image: url("../images/allProjects/rookiemaker.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.onlyVetPJ {
+  background-image: url("../images/allProjects/rookiemaker.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.category_btn_wrapper {
+  margin-top: 25px;
+  max-height: 42px;
+  margin-left: 28px;
+  max-width: 50%;
+  display: flex;
+}
+.category_btn {
+  padding: 8px 12px;
+  font-size: 18px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+}
+.project_item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.category_btn:not(:last-child) {
+  margin-right: 8px;
+}
+.PJimage_wrapper {
+  margin-top: 25px;
+}
+.project_info {
+  margin-left: 25px;
+}
+.project_title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.project_description {
+  min-height: 88px;
+  font-size: 36px;
+  line-height: 44px;
+  opacity: 0.5;
+}
+.project_item {
+  margin-bottom: 25px;
+}
+main {
+  padding-bottom: 100px;
+}

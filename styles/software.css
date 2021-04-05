@@ -1,0 +1,61 @@
+.software_tech-header {
+  margin-bottom: 120px;
+}
+.software_tech-descrpt {
+  width: 70%;
+  margin-bottom: 120px;
+}
+.techno {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.techno_item {
+  width: 400px;
+}
+.techno_item:before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 35px;
+}
+.techno {
+  min-height: 445px;
+}
+.techno_item1::before {
+  background-image: url(../images/softwareIcons/node-v14.16.0.svg);
+}
+.techno_item2::before {
+  background-image: url(../images/softwareIcons/Vector.svg);
+}
+.techno_item3::before {
+  background-image: url(../images/softwareIcons/backend.svg);
+}
+.techno_item4::before {
+  background-image: url(../images/softwareIcons/dbases.svg);
+}
+.techno_item5::before {
+  background-image: url(../images/softwareIcons/cms.svg);
+}
+.techno_item6::before {
+  background-image: url(../images/softwareIcons/infrastructure.svg);
+}
+.techno_item-title {
+  font-weight: normal;
+}
+.techno_item-descrpt {
+  font-size: 28px;
+  opacity: 0.5;
+}
+.white_up {
+  display: block;
+}
+.software_dev-header {
+  margin-bottom: 60px;
+}
+.software_project_items {
+  margin-bottom: 120px;
+}
