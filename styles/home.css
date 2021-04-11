@@ -149,7 +149,8 @@ nav {
 }
 
 .footer_content-wrapper {
-  width: 1420px;
+  max-width: 1420px;
+  width: 95%;
   margin: 0 auto;
 }
 nav {
