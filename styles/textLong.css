@@ -1,0 +1,31 @@
+.text_header_long {
+  width: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/fos/heroBG.png");
+  padding-bottom: 60px;
+}
+.story_section {
+  padding: 120px 0 0;
+}
+.story_sectcion_preStory,
+.story_sectcion_story {
+  max-width: 1020px;
+  width: 95%;
+}
+.story_sectcion_story {
+  font-size: 1.75rem;
+}
+.story_sectcion_preStory {
+  margin-bottom: 120px;
+}
+.story_sectcion_title {
+  margin-bottom: 60px;
+}
+.story_sectcion_story:not(:last-child) {
+  margin-bottom: 60px;
+}
+.story_sectcion_wrapper {
+  margin-bottom: 120px;
+}

@@ -1,0 +1,196 @@
+.about_hero_title {
+  margin-top: 120px;
+  margin-bottom: 65px;
+}
+.about_hero_descr {
+  max-width: 1000px;
+  font-size: 4rem;
+  margin-bottom: 120px;
+}
+.LocationItem:before {
+  content: "";
+  display: inline-block;
+  width: 39px;
+  height: 53px;
+  background-image: url("../images/about-us/locationIcon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+.hero_img_wrapper img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.hero_img_wrapper {
+  margin-bottom: 120px;
+}
+.benefits_list_item h2 {
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 173%;
+}
+.benefits_list_item h2::after,
+.faq_question:after {
+  background-image: url("../images/about-us/arrowDown.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  content: "";
+  width: 38px;
+  height: 23px;
+  transition: 200ms;
+  display: block;
+}
+.benefits_list_item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding: 20px 0;
+  max-height: 140px;
+  overflow: hidden;
+  transition: 200ms linear all;
+}
+.benefits_list_item:hover h2 {
+  opacity: 1;
+}
+.benefits {
+  margin-bottom: 120px;
+}
+.benefits_list_item p {
+  max-width: 920px;
+  opacity: 0.5;
+}
+
+.ourTeam_list {
+  display: flex;
+}
+.member_img_wrapper {
+  max-width: 456px;
+  width: 100%;
+  margin-bottom: 55px;
+}
+.ourTeam_list_item:not(:last-child) {
+  margin-right: 25px;
+}
+.about_member_name {
+  display: inline-block;
+}
+.ourTeam_list_item:nth-child(-n + 2) .about_member_name:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #5b4dff;
+}
+
+.member_title {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 200;
+  opacity: 0.5;
+}
+.ourTeam_title {
+  margin-bottom: 57px;
+}
+.ourTeam {
+  margin-bottom: 120px;
+}
+.geographical_advantage {
+  position: relative;
+  margin-bottom: 330px;
+}
+.map_wrapper {
+  position: absolute;
+}
+.section_wrapper {
+  display: flex;
+  width: 1420px;
+  max-width: 95%;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+.advantege_wrapper {
+  max-width: 695px;
+  width: 95%;
+}
+.advantege_wrapper_title {
+  margin-bottom: 55px;
+  max-width: 90%;
+}
+.advantege_wrapper_text {
+  opacity: 0.5;
+}
+.next_to_text {
+  position: relative;
+}
+.svgText {
+  font-weight: 300;
+  font-size: 2.19rem;
+  fill: white;
+}
+path {
+  transition: 150ms;
+  stroke: rgba(255, 255, 255, 0);
+}
+path:hover {
+  stroke: white;
+}
+.littleAbout_us_wrapper {
+  max-width: 532px;
+  width: 95%;
+  padding-top: 100px;
+}
+.littleAbout_us_wrapper p {
+  opacity: 0.5;
+}
+.littleAbout_us_title {
+  margin-bottom: 35px;
+}
+.littleAbout_us {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.faq_question,
+.faq_answer {
+  opacity: 0.5;
+}
+.faq_answer {
+  max-width: 1040px;
+}
+.faq_list_items {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  max-height: 120px;
+  padding: 35px 0;
+  overflow: hidden;
+  transition: 200ms linear all;
+  cursor: pointer;
+}
+
+.faq_list_items:last-child {
+  border-bottom: none;
+}
+.faq_wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 65px;
+}
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.faq_list_items:hover .faq_question {
+  opacity: 1;
+}
+.active {
+  max-height: 600px;
+}
+.active h2::after,
+.active .faq_question::after {
+  transform: rotateX(180deg);
+}
+.faq_section {
+  margin-bottom: 120px;
+}
