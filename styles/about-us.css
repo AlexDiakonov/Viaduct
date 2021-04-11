@@ -69,6 +69,9 @@
   width: 100%;
   margin-bottom: 55px;
 }
+.member_img_wrapper img {
+  width: 100%;
+}
 .ourTeam_list_item:not(:last-child) {
   margin-right: 25px;
 }
