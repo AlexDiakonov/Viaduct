@@ -54,16 +54,14 @@ body {
    */
 }
 main {
-  max-width: 1420px;
-  width: 95%;
+  width: 1420px;
   margin: 0 auto;
 }
 header {
   max-width: 1420px;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
   padding-top: 80px;
-  margin: 0 auto;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -150,8 +148,7 @@ nav {
 }
 
 .footer_content-wrapper {
-  max-width: 1420px;
-  width: 95%;
+  width: 1420px;
   margin: 0 auto;
 }
 nav {
@@ -455,7 +452,7 @@ body {
 .team_stories {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .image_wrapper {
   width: 455px;
@@ -478,9 +475,6 @@ body {
 .team_stories-item {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 8px;
-}
-.team_stories-item:not(:last-child) {
-  margin-right: 25px;
 }
 .story_descr-wrapper {
   height: 204px;
