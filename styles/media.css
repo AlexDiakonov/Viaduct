@@ -1,15 +1,20 @@
 .video_content {
   border-radius: 8px;
 }
+.form_button {
+  border-radius: 8px;
+}
 
 @media screen and (max-width: 1800px) {
   main,
-  nav,
-  .dropdown_menu-wrapper,
-  .footer_content-wrapper,
-  .dropdown_menu-social,
   .rights_wrapper,
   .all_projects {
+    max-width: 100%;
+  }
+  .footer_content-wrapper,
+  .rights_wrapper,
+  .dropdown_menu-wrapper,
+  .dropdown_menu-social {
     max-width: 95%;
   }
   .nav_btn {
@@ -20,7 +25,6 @@
   }
   .moto_section,
   .header_wrapper {
-    max-width: 95%;
     margin: 0 auto;
   }
   .services_section,
@@ -75,6 +79,9 @@
   .testimonial_members {
     width: 100%;
   }
+  .team_stories-item {
+    max-width: 31%;
+  }
   .image_wrapper {
     max-width: 455px;
     background-size: cover;
@@ -92,6 +99,19 @@
     font-size: 6rem;
   }
 
+  h2 {
+    font-size: 3.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.9rem;
+  }
+
   /* home page */
 
   .main_menu a {
@@ -99,7 +119,7 @@
   }
   .company_moto {
     margin-top: 160px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   .service_list-item {
     height: 120px;
@@ -120,13 +140,7 @@
   .team_story-description {
     font-size: 50px;
   }
-  .team_stories {
-    width: calc(100% + 30px);
-    margin: 0px -15px;
-  }
-  .team_stories-item {
-    padding: 0px 15px;
-  }
+
   .projet_header {
     font-size: 30px;
   }
@@ -174,6 +188,20 @@
     width: 100%;
     max-width: 800px;
     margin-bottom: 80px;
+  }
+
+  /* about us */
+
+  .littleAbout_us_wrapper {
+    padding-right: 15px;
+  }
+  .about_us_image {
+    max-width: 50%;
+  }
+  .about_us_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -334,8 +362,63 @@
     object-fit: contain;
     object-position: top;
   }
-}
 
+  /* about us page */
+
+  .benefits_list_item p {
+    margin-top: 24px;
+  }
+  .advantege_wrapper {
+    max-width: 600px;
+  }
+
+  .faq_list_items {
+    max-height: 80px;
+    padding: 20px 0;
+  }
+  .faq_question {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  .faq_list_items.active {
+    max-height: 600px;
+  }
+  .faq_answer {
+    font-size: 24px;
+  }
+
+  /* contact us */
+
+  .contact_form_description {
+    font-size: 3rem;
+  }
+  .form_title {
+    margin-bottom: 60px;
+  }
+  .contact_form input {
+    margin-bottom: 40px;
+    padding: 20px 0;
+  }
+  .form_button {
+    padding: 30px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slick-list,
+  .slick-track {
+    width: 100% !important;
+  }
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 4.5rem;
@@ -426,6 +509,93 @@
   .story_image {
     width: 160px;
     height: 160px;
+  }
+
+  /*about us page*/
+
+  .about_hero_descr {
+    font-size: 3rem;
+  }
+  .benefits_list_item {
+    max-height: 80px;
+    padding: 20px 0;
+  }
+  .benefits_list_item.active {
+    max-height: 600px;
+  }
+  .benefits_list_item h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
+  .benefits_list_item p {
+    font-size: 24px;
+  }
+  .ourTeam,
+  .benefits {
+    margin-bottom: 60px;
+  }
+  .geographical_advantage {
+    margin-bottom: 100px;
+  }
+  .advantege_wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .map_wrapper svg {
+    height: 100%;
+    width: 100%;
+  }
+  .littleAbout_us_wrapper {
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .littleAbout_us_wrapper p {
+    font-size: 30px;
+  }
+  .littleAbout_us {
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  .about_us_image {
+    max-width: 100%;
+    width: 100%;
+    height: 450px;
+  }
+  .faq_wrapper {
+    padding: 30px 20px;
+  }
+  .faq_question {
+    font-size: 23px;
+  }
+  .benefits_list_item h2::after,
+  .faq_question:after {
+    width: 20px;
+    height: 16px;
+    background-size: contain;
+  }
+
+  /* text Long Read */
+
+  .projectPage_image_long {
+    height: 350px;
+  }
+  .story_section {
+    padding: 60px 0 0;
+  }
+  .story_sectcion_preStory {
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+  .story_sectcion_wrapper {
+    margin-bottom: 60px;
+  }
+  .story_sectcion_story {
+    width: 100%;
   }
 }
 
@@ -699,6 +869,7 @@
     max-width: 95%;
     margin-bottom: 20px;
     max-height: 250px;
+    margin-top: 40px;
   }
   .projPAge_header .header_wrapper,
   .projPAge_header_long .header_wrapper {
@@ -791,6 +962,187 @@
     font-size: 36px;
     line-height: 44px;
   }
+
+  /*text long read*/
+
+  .text_header_long {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+  .story_sectcion_preStory,
+  .story_sectcion_story {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .story_sectcion_title {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  /* contact us page */
+
+  .contact_form {
+    padding: 60px 0;
+  }
+  .contact_form_title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .contact_form_description {
+    font-size: 28px;
+    line-height: 40px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  form {
+    padding: 15px;
+  }
+  .form_title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .contact_form input {
+    margin-bottom: 15px;
+    padding: 15px 0;
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .form_button {
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* about us */
+
+  .about_hero_title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .about_hero_descr {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 60px;
+  }
+  .LocationItem:before {
+    width: 22px;
+    height: 22px;
+    margin-right: 3px;
+    background-size: contain;
+  }
+  .hero_img_wrapper {
+    margin-bottom: 60px;
+  }
+  .hero_img_wrapper {
+    margin-bottom: 30px;
+    height: 250px;
+  }
+  .hero_img_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .benefits_title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .benefits_list_item h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .benefits_list_item:last-child {
+    border-bottom: none;
+  }
+  .ourTeam_title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+  .ourTeam_list_item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .member_img_wrapper {
+    margin-bottom: 25px;
+  }
+  .ourTeam_list_item:nth-child(-n + 2) .about_member_name:after {
+    display: none;
+  }
+  .about_member_name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .member_title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .geographical_advantage {
+    margin-bottom: 60px;
+  }
+  .advantege_wrapper {
+    margin-top: 140px;
+  }
+  .advantege_wrapper_title {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  .advantege_wrapper_title {
+    margin-bottom: 25px;
+    max-width: 100%;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .advantege_wrapper_text {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .littleAbout_us {
+    flex-direction: column-reverse;
+  }
+  .about_us_image {
+    height: 400px;
+    margin-bottom: 60px;
+  }
+  .littleAbout_us_title {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .littleAbout_us_wrapper {
+    margin-bottom: 0px;
+  }
+  .littleAbout_us_wrapper p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .faq_section {
+    margin-bottom: 60px;
+  }
+  .faq_title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+  .faq_question {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .faq_list_items .faq_question {
+    margin-bottom: 45px;
+  }
+  .faq_list_items.active .faq_question {
+    margin-bottom: 20px;
+  }
+  .faq_answer {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -803,4 +1155,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  .ourTeam_list {
+    flex-direction: column;
+  }
+  .ourTeam_list_item:not(:last-child) {
+    margin-right: 0px;
+  }
+  .ourTeam_list_item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .member_img_wrapper {
+    height: 290px;
+  }
+  .member_img_wrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

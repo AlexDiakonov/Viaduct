@@ -96,6 +96,9 @@ nav {
   margin: 0 auto;
   max-width: 1416px;
 }
+.moto_section {
+  padding-bottom: 200px;
+}
 .header_logo {
   font-size: 36px;
   color: white;
@@ -234,6 +237,7 @@ footer {
   height: 50px;
   display: inline-block;
   background-position: center;
+  margin: 0;
   background-repeat: no-repeat;
   background-image: url(../images/seviceImages/before_arrow.svg);
 }
@@ -360,6 +364,7 @@ body {
 .testmonials_header {
   font-size: 36px;
   font-weight: 400;
+  margin-bottom: 60px;
 }
 .testimonial_wrapper {
   display: flex;
@@ -442,6 +447,7 @@ body {
 .team_story-header {
   font-size: 28px;
   font-weight: 400;
+  margin-bottom: 45px;
 }
 .team_story-description {
   font-weight: 300;
@@ -456,6 +462,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .image_wrapper {
   width: 455px;
@@ -625,4 +632,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../images/playIcon.png");
+}
+.slick-slide {
+  outline: none;
 }
