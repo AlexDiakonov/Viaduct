@@ -124,6 +124,9 @@
     margin-top: 160px;
     margin-bottom: 50px;
   }
+  .mainpage_header {
+    min-height: 80vh;
+  }
   .service_list-item {
     height: 120px;
   }
@@ -452,14 +455,15 @@
 
   /* home page */
   .moto_section {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   .company_moto {
     margin-bottom: 50px;
+    margin-top: 0;
   }
   .mainpage_header {
     min-height: 50vh;
-    max-height: 50vh;
+    max-height: 55vh;
   }
   .services_section,
   .parter_section,
@@ -1155,12 +1159,16 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .mainpage_header {
+    max-height: 45vh;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .video_content {
     height: 240px;
   }
+
   .techno_item {
     width: 100%;
   }
