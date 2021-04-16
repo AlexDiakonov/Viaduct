@@ -117,6 +117,9 @@
   .main_menu a {
     font-size: 56px;
   }
+  .mainpage_header {
+    background-position: 0 25%;
+  }
   .company_moto {
     margin-top: 160px;
     margin-bottom: 50px;
@@ -448,6 +451,16 @@
   }
 
   /* home page */
+  .moto_section {
+    padding-top: 100px;
+  }
+  .company_moto {
+    margin-bottom: 50px;
+  }
+  .mainpage_header {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
   .services_section,
   .parter_section,
   .home_slider,
@@ -656,7 +669,6 @@
   }
   .company_moto {
     margin-top: 60px;
-    margin-bottom: 10px;
     font-size: 36px;
     line-height: 44px;
   }
