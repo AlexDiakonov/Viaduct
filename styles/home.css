@@ -636,3 +636,7 @@ body {
 .slick-slide {
   outline: none;
 }
+.partner_logos-items img {
+  max-width: 100%;
+  object-fit: contain;
+}
