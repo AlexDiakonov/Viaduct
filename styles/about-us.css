@@ -27,7 +27,7 @@
 .benefits_list_item h2 {
   opacity: 0.5;
   display: flex;
-  height: 130px;
+  max-height: 130px;
   justify-content: space-between;
   align-items: center;
   line-height: 173%;
@@ -184,7 +184,7 @@ path:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 130px;
+  max-height: 130px;
 }
 
 .faq_list_items:hover .faq_question {
