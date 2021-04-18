@@ -19,7 +19,8 @@
   padding-bottom: 65px;
 }
 .header_wrapper {
-  width: 1420px;
+  width: 1416px;
+  max-width: 95%;
   margin: 0 auto;
 }
 .projectPage_subtitle {

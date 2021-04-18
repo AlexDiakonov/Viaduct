@@ -94,7 +94,8 @@ ul {
 }
 nav {
   margin: 0 auto;
-  max-width: 1416px;
+  width: 1416px;
+  max-width: 95%;
 }
 .moto_section {
   padding-bottom: 200px;
@@ -462,7 +463,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .image_wrapper {
   width: 455px;
