@@ -6,11 +6,6 @@
 }
 
 @media screen and (max-width: 1800px) {
-  main,
-  .rights_wrapper,
-  .all_projects {
-    max-width: 100%;
-  }
   .footer_content-wrapper,
   .rights_wrapper,
   .dropdown_menu-wrapper,
@@ -33,13 +28,10 @@
   .team_story {
     max-width: 100%;
   }
-  .home_slider {
-    display: none;
-    max-width: 95%;
-  }
+
   .testimonial_members-item {
-    max-width: 450px;
-    width: 100%;
+    width: 450px;
+    max-width: 95%;
   }
 
   /* long read */
@@ -62,7 +54,10 @@
 
 @media screen and (max-width: 1620px) {
   /* home page */
-
+  .home_slider {
+    display: none;
+    max-width: 95%;
+  }
   .mainpage_header {
     background-size: contain;
   }

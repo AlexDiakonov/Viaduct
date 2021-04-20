@@ -6,6 +6,9 @@
   background-image: url("../images/fos/heroBG.png");
   padding-bottom: 60px;
 }
+.text_header_long nav {
+  max-width: 95%;
+}
 .story_section {
   padding: 120px 0 0;
 }

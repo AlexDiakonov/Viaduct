@@ -95,7 +95,6 @@ ul {
 nav {
   margin: 0 auto;
   max-width: 1416px;
-  width: 100%;
 }
 .moto_section {
   padding-bottom: 200px;
@@ -219,7 +218,7 @@ nav {
 }
 .open_dropdown .dropdown_menu-wrapper {
   opacity: 1;
-  transition: 350ms linear all;
+  transition: 30ms linear all;
 }
 footer {
   background-color: #fff;
@@ -306,7 +305,6 @@ body {
   max-width: 1136px;
   width: 100%;
   max-height: 635px;
-  height: 65vh;
   background-image: url(../images/sliderImages/slideBG.png);
   background-position: center;
   background-repeat: no-repeat;
