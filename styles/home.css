@@ -104,6 +104,7 @@ nav {
   color: white;
   line-height: 36px;
 }
+
 .nav_contact {
   display: inline-block;
   font-size: 18px;
@@ -115,11 +116,13 @@ nav {
   border-radius: 8px;
   background: #191919;
 }
+
 .nav_item-wrapper {
   display: flex;
-  width: 205px;
+  width: 200px;
   justify-content: space-between;
 }
+
 .nav_btn {
   background: none;
   width: 42px;
@@ -127,6 +130,10 @@ nav {
   outline: none;
   cursor: pointer;
   transition: 200ms ease-out all;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 12px 0px;
 }
 
 .nav_btn:before {
