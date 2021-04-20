@@ -80,7 +80,7 @@
   border-radius: 8px;
   border: none;
 }
-.project_item {
+.project_item a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
