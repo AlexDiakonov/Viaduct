@@ -378,10 +378,6 @@
     max-width: 600px;
   }
 
-  .faq_list_items {
-    max-height: 80px;
-    padding: 20px 0;
-  }
   .faq_question {
     margin-bottom: 25px;
     font-size: 26px;
@@ -533,10 +529,7 @@
   .about_hero_descr {
     font-size: 3rem;
   }
-  .benefits_list_item {
-    max-height: 80px;
-    padding: 20px 0;
-  }
+
   .benefits_list_item.active {
     max-height: 600px;
   }
