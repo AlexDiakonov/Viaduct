@@ -94,8 +94,8 @@ ul {
 }
 nav {
   margin: 0 auto;
-  width: 1416px;
-  max-width: 95%;
+  max-width: 1416px;
+  width: 100%;
 }
 .moto_section {
   padding-bottom: 200px;
@@ -182,6 +182,7 @@ nav {
   display: flex;
   width: 1420px;
   margin: 0 auto;
+  opacity: 0;
 }
 .dropdown_menu-social {
   width: 1420px;
@@ -215,6 +216,9 @@ nav {
 .open_dropdown {
   padding: 230px 0 80px 0;
   height: 75vh;
+}
+.open_dropdown .dropdown_menu-wrapper {
+  opacity: 1;
 }
 footer {
   background-color: #fff;
