@@ -183,7 +183,6 @@ nav {
   width: 1420px;
   margin: 0 auto;
   opacity: 0;
-  transition: 150ms linear all;
 }
 .dropdown_menu-social {
   width: 1420px;
@@ -220,6 +219,7 @@ nav {
 }
 .open_dropdown .dropdown_menu-wrapper {
   opacity: 1;
+  transition: 350ms linear all;
 }
 footer {
   background-color: #fff;
