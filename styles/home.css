@@ -286,7 +286,7 @@ footer {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  transition: 500ms ease-out all;
+  transition: 350ms ease-out all;
   height: 665px;
 }
 body {

@@ -13,7 +13,7 @@ const progressBar = document.querySelector(".progressBar");
 const maxMargin = sliderWidth - sliderView.offsetWidth;
 const minMargin = sliderWidth;
 
-const minHeight = slider.offsetWidth * 1.5;
+const minHeight = slider.offsetWidth;
 sliderWrapper.style.height = `${minHeight}px`;
 
 function offset(el) {
@@ -25,12 +25,9 @@ function offset(el) {
 
 var divOffset = offset(sliderWrapper);
 const lastPoint = divOffset.top + minHeight;
-console.log(divOffset.top, divOffset.top + minHeight);
-let currentSlide = 0;
 
 const swipeLeft = () => {
   if (currentSlide <= slidesArr.length - 1) {
-    const maxMargin = sliderWidth - sliderView.offsetWidth;
     currentSlide < slidesArr.length - 1
       ? (slider.style.marginLeft = `-${slideWidth * currentSlide}px`)
       : (slider.style.marginLeft = `-${maxMargin}px`);
@@ -38,41 +35,29 @@ const swipeLeft = () => {
 };
 
 const swipeRight = () => {
-  if (currentSlide >= 0) {
-    const maxMargin = sliderWidth - sliderView.offsetWidth;
-    if (currentSlide === slidesArr.length) {
-      console.log("if");
-      slider.style.marginLeft = `-${maxMargin}px`;
-    } else {
-      console.log("else");
-      currentSlide--;
-      slider.style.marginLeft = `-${slideWidth * currentSlide}px`;
-    }
+  if (currentSlide <= 2) {
+    slider.style.marginLeft = `-${slideWidth * currentSlide}px`;
   }
 };
 let lastScrollTop = 0;
 var doc = document.documentElement;
 
 function scrollEvent() {
-  // var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
   const currentProgress =
     (sliderView.offsetTop /
       (sliderWrapper.offsetHeight - sliderView.offsetHeight)) *
     100;
-  currentSl = ((currentProgress / 100) * slidesArr.length)
+  let currentSl = ((currentProgress / 100) * slidesArr.length)
     .toString()
     .slice(0, 1);
   currentSlide = parseInt(currentSl);
-  const barWidth = ((currentProgress / 100) * slidesArr.length)
-    .toString()
-    .slice(2, 4);
-  console.log(currentSlide);
+  const barWidth = (currentProgress / 100).toString().slice(2, 4);
+
   progressBar.style.width = barWidth + "%";
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop) {
     swipeLeft();
   } else if (st <= lastScrollTop) {
-    console.log("up");
     swipeRight();
   }
   lastScrollTop = st <= 0 ? 0 : st;
@@ -95,35 +80,3 @@ const sliderObserver = new IntersectionObserver(function (entries, observer) {
   });
 }, options);
 sliderObserver.observe(sliderView);
-
-// let trasholdOprtionsForTop = {
-//   trashold: 0.5,
-// };
-
-// const setSliderToBegin = new IntersectionObserver(function (ent) {
-//   ent.forEach((en) => {
-//     if (en.isIntersecting) {
-//       sliderShouldMoveLeft = false;
-//       currentSlide = 0;
-//
-//     }
-//   });
-// }, trasholdOprtionsForTop);
-// setSliderToBegin.observe(serviceSection);
-
-// let trasholdOptionsForBottom = {
-//   trashold: 1,
-// };
-
-// const setSliderToEnd = new IntersectionObserver(function (ent) {
-//   ent.forEach((en) => {
-//
-//     if (en.isIntersecting) {
-//       console.log("lol");
-//       sliderShouldMoveRight = false;
-//
-//       currentSlide = slidesArr.length - 1;
-//     }
-//   });
-// }, trasholdOptionsForBottom);
-// setSliderToEnd.observe(partnerSection);
