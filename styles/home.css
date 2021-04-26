@@ -277,7 +277,8 @@ footer {
   width: 1420px;
 }
 .home_slider {
-  width: 1420px;
+  max-width: 1420px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 220px;
 }
@@ -305,6 +306,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 18%;
+  width: 100%;
   transition: 400ms ease-out all;
 }
 .slider_item {

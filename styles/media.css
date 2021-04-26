@@ -52,10 +52,10 @@
 
 @media screen and (max-width: 1620px) {
   /* home page */
-  .home_slider {
+  /* .home_slider {
     display: none;
     max-width: 95%;
-  }
+  } */
   .mainpage_header {
     background-size: contain;
   }

@@ -1,8 +1,8 @@
 const sliderView = document.querySelector(".view_port");
 const slider = document.querySelector(".slider");
-const sliderWidth = slider.offsetWidth;
+let sliderWidth;
 const sliderWrapper = document.querySelector(".slider_wrapper");
-const slideWidth = document.querySelector(".slider_item").offsetWidth;
+const slideWidth = sliderView.offsetWidth * 0.8;
 const slidesArr = document.querySelectorAll(".slider_item");
 const serviceSection = document.querySelector(".services_section");
 const partnerSection = document.querySelector(".parter_section");
@@ -10,12 +10,20 @@ const win = window;
 const winWidth = win.innerWidth * 0.05;
 const progressBar = document.querySelector(".progressBar");
 
+const slideWidthApply = () => {
+  slidesArr.forEach((slide) => {
+    slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
+  });
+  sliderWidth = sliderView.offsetWidth;
+};
+slideWidthApply();
 const maxMargin = sliderWidth - sliderView.offsetWidth;
+console.log(sliderWidth, sliderView.offsetWidth);
 const minMargin = sliderWidth;
-
 const minHeight = slider.offsetWidth;
 sliderWrapper.style.height = `${minHeight}px`;
 
+window.addEventListener("resize", slideWidthApply);
 function offset(el) {
   var rect = el.getBoundingClientRect(),
     scrollBottom = window.pageXOffset || document.documentElement.scrollLeft,
