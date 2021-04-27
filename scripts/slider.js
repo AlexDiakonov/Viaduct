@@ -27,7 +27,7 @@ console.log(slideWidthApply()[0]);
 
 console.log(slideWidthApply()[0], sliderView.offsetWidth);
 const minMargin = slideWidthApply();
-console.log(minMargin);
+
 sliderWrapper.style.height = `${slideWidthApply()[1]}px`;
 
 window.addEventListener("resize", slideWidthApply);
@@ -46,12 +46,14 @@ const swipeLeft = () => {
     currentSlide < slidesArr.length - 1
       ? (slider.style.marginLeft = `-${slideWidthApply()[2] * currentSlide}px`)
       : (slider.style.marginLeft = `-${slideWidthApply[3]}px`);
+    console.log("swipeLeft");
   }
 };
 
 const swipeRight = () => {
   if (currentSlide <= 2) {
     slider.style.marginLeft = `-${slideWidthApply()[2] * currentSlide}px`;
+    console.log("swipeRight");
   }
 };
 let lastScrollTop = 0;
