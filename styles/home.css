@@ -295,8 +295,6 @@ footer {
 body {
   overflow-x: hidden;
   position: relative;
-  touch-action: none;
-  -ms-touch-action: none;
 }
 
 .slider_wrapper {

@@ -10,13 +10,6 @@ const win = window;
 const winWidth = win.innerWidth * 0.05;
 const progressBar = document.querySelector(".progressBar");
 
-const sliderWidthCalc = () => {
-  return sliderWidth;
-};
-const minHeightCalc = () => {
-  const minHeight = slider.offsetWidth;
-  return minHeight;
-};
 const slideWidthApply = () => {
   slidesArr.forEach((slide) => {
     slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
@@ -24,17 +17,18 @@ const slideWidthApply = () => {
   const sliderWidth = slider.offsetWidth;
   const minHeight = slider.offsetWidth;
   const slideWidth = sliderView.offsetWidth * 0.8;
+  const maxMargin = sliderWidth - sliderView.offsetWidth;
   console.log(`widht${sliderWidth} height ${minHeight}`);
-  return [sliderWidth, minHeight, slideWidth];
+  return [sliderWidth, minHeight, slideWidth, maxMargin];
 };
 
 slideWidthApply();
 console.log(slideWidthApply()[0]);
-const maxMargin = slideWidthApply()[0] - sliderView.offsetWidth;
+
 console.log(slideWidthApply()[0], sliderView.offsetWidth);
 const minMargin = slideWidthApply();
-const minHeight = minHeightCalc();
-sliderWrapper.style.height = `${minHeight}px`;
+console.log(minMargin);
+sliderWrapper.style.height = `${slideWidthApply()[1]}px`;
 
 window.addEventListener("resize", slideWidthApply);
 function offset(el) {
@@ -45,13 +39,13 @@ function offset(el) {
 }
 
 var divOffset = offset(sliderWrapper);
-const lastPoint = divOffset.top + minHeight;
+const lastPoint = divOffset.top + slideWidthApply()[1];
 
 const swipeLeft = () => {
   if (currentSlide <= slidesArr.length - 1) {
     currentSlide < slidesArr.length - 1
       ? (slider.style.marginLeft = `-${slideWidthApply()[2] * currentSlide}px`)
-      : (slider.style.marginLeft = `-${maxMargin}px`);
+      : (slider.style.marginLeft = `-${slideWidthApply[3]}px`);
   }
 };
 
