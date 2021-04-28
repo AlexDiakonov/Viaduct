@@ -11,32 +11,27 @@ const win = window;
 const winWidth = win.innerWidth * 0.05;
 const progressBar = document.querySelector(".progressBar");
 
-// const sliderWidthCalc = () => {
-//   return sliderWidth;
-// };
-const minHeightCalc = () => {
-  const minHeight = slider.offsetWidth;
-  return minHeight;
-};
-
+const mediaQuery = window.matchMedia("(max-width: 991px)");
 const slideWidthApply = () => {
   slidesArr.forEach((slide) => {
     slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
   });
-  minHeightCalc();
+
   const sliderWidth = slider.offsetWidth;
-  const minHeight = minHeightCalc();
   const maxMargin = sliderWidth - sliderCont.offsetWidth;
   const slideWidth = sliderView.offsetWidth * 0.8;
-  console.log(maxMargin);
+  let minHeight;
+  if (mediaQuery.matches) {
+    minHeight = slider.offsetWidth * 2.5;
+  } else {
+    minHeight = slider.offsetWidth;
+  }
   return [sliderWidth, minHeight, maxMargin, slideWidth];
 };
 
 slideWidthApply();
-// const maxMargin = slideWidthApply()[0] - sliderView.offsetWidth;
-// console.log("2", maxMargin);
 
-const minHeight = minHeightCalc();
+const minHeight = slideWidthApply()[1];
 sliderWrapper.style.height = `${minHeight}px`;
 
 window.addEventListener("resize", slideWidthApply);
