@@ -20,12 +20,6 @@
   .header_wrapper {
     margin: 0 auto;
   }
-  .services_section,
-  .parter_section,
-  .testimonials,
-  .team_story {
-    max-width: 100%;
-  }
 
   .testimonial_members-item {
     width: 450px;
@@ -106,7 +100,9 @@
   }
 
   /* home page */
-
+  .view_port {
+    top: 16%;
+  }
   .main_menu a {
     font-size: 56px;
   }
@@ -130,7 +126,7 @@
     height: 50px;
     width: 50px;
   }
-  .services_section,
+
   .parter_section,
   .home_slider,
   .testimonials {
@@ -233,7 +229,9 @@
   }
 
   /* home page */
-
+  .view_port {
+    top: 15%;
+  }
   .slick-track {
     display: flex;
     align-items: center;
@@ -454,7 +452,7 @@
     min-height: 50vh;
     max-height: 55vh;
   }
-  .services_section,
+
   .parter_section,
   .home_slider,
   .testimonials {
@@ -645,7 +643,6 @@
     margin-bottom: 50px;
   }
 
-  .services_section,
   .parter_section,
   .home_slider,
   .testimonials {
@@ -1154,7 +1151,16 @@
   .video_content {
     height: 240px;
   }
-
+  .view_port {
+    top: 11%;
+  }
+  .slider_links-wrapper {
+    margin: 0 auto;
+  }
+  .company_info-wrapper {
+    margin: 0 auto;
+    max-width: 265px;
+  }
   .techno_item {
     width: 100%;
   }

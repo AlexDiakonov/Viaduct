@@ -1,5 +1,6 @@
 const sliderView = document.querySelector(".view_port");
 const slider = document.querySelector(".slider");
+const sliderCont = document.querySelector(".slider_borders");
 // const sliderWidth = slider.offsetWidth;
 const sliderWrapper = document.querySelector(".slider_wrapper");
 
@@ -10,25 +11,32 @@ const win = window;
 const winWidth = win.innerWidth * 0.05;
 const progressBar = document.querySelector(".progressBar");
 
+// const sliderWidthCalc = () => {
+//   return sliderWidth;
+// };
+const minHeightCalc = () => {
+  const minHeight = slider.offsetWidth;
+  return minHeight;
+};
 const slideWidthApply = () => {
   slidesArr.forEach((slide) => {
     slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
   });
+  minHeightCalc();
   const sliderWidth = slider.offsetWidth;
-  const minHeight = slider.offsetWidth;
+  const minHeight = minHeightCalc();
+  const maxMargin = sliderWidth - sliderCont.offsetWidth;
   const slideWidth = sliderView.offsetWidth * 0.8;
-  const maxMargin = sliderWidth - sliderView.offsetWidth;
-  console.log(`widht${sliderWidth} height ${minHeight}`);
-  return [sliderWidth, minHeight, slideWidth, maxMargin];
+  console.log(maxMargin);
+  return [sliderWidth, minHeight, maxMargin, slideWidth];
 };
 
 slideWidthApply();
-console.log(slideWidthApply()[0]);
+// const maxMargin = slideWidthApply()[0] - sliderView.offsetWidth;
+// console.log("2", maxMargin);
 
-console.log(slideWidthApply()[0], sliderView.offsetWidth);
-const minMargin = slideWidthApply();
-
-sliderWrapper.style.height = `${slideWidthApply()[1]}px`;
+const minHeight = minHeightCalc();
+sliderWrapper.style.height = `${minHeight}px`;
 
 window.addEventListener("resize", slideWidthApply);
 function offset(el) {
@@ -39,21 +47,19 @@ function offset(el) {
 }
 
 var divOffset = offset(sliderWrapper);
-const lastPoint = divOffset.top + slideWidthApply()[1];
+const lastPoint = divOffset.top + minHeight;
 
 const swipeLeft = () => {
   if (currentSlide <= slidesArr.length - 1) {
     currentSlide < slidesArr.length - 1
-      ? (slider.style.marginLeft = `-${slideWidthApply()[2] * currentSlide}px`)
-      : (slider.style.marginLeft = `-${slideWidthApply[3]}px`);
-    console.log("swipeLeft");
+      ? (slider.style.marginLeft = `-${slideWidthApply()[3] * currentSlide}px`)
+      : (slider.style.marginLeft = `-${slideWidthApply()[2]}px`);
   }
 };
 
 const swipeRight = () => {
   if (currentSlide <= 2) {
-    slider.style.marginLeft = `-${slideWidthApply()[2] * currentSlide}px`;
-    console.log("swipeRight");
+    slider.style.marginLeft = `-${slideWidthApply()[3] * currentSlide}px`;
   }
 };
 let lastScrollTop = 0;

@@ -54,6 +54,9 @@ body {
    */
 }
 main {
+  margin: 0 auto;
+}
+main section {
   max-width: 1420px;
   width: 95%;
   margin: 0 auto;
@@ -273,11 +276,10 @@ footer {
 }
 .services_section {
   margin: 0 auto;
-  margin-bottom: 200px;
-  width: 1420px;
+  margin-bottom: 150px;
 }
 .home_slider {
-  max-width: 1420px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 220px;
@@ -296,17 +298,25 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
+body main section {
+  max-width: 95%;
+  width: 1420px;
+}
 .slider_wrapper {
   position: relative;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
-
+.slider_borders {
+  width: 1420px;
+  max-width: 95%;
+  margin: 0 auto;
+}
 .view_port {
   position: -webkit-sticky;
   position: sticky;
   top: 18%;
+  overflow-x: hidden;
   width: 100%;
   transition: 400ms ease-out all;
 }
@@ -328,14 +338,17 @@ body {
 }
 
 .slider_img {
+  max-width: 80%;
   align-self: center;
 }
+
 .slider_link {
   display: inline-block;
   color: #fff;
   text-align: center;
   line-height: 42px;
   font-size: 18px;
+  margin-bottom: 10px;
   padding: 0 20px 0 20px;
   height: 42px;
   background: rgba(255, 255, 255, 0.103);
@@ -347,17 +360,16 @@ body {
   display: flex;
   justify-content: space-between;
   width: 265px;
+  flex-wrap: wrap;
 }
 .company_info-wrapper {
   margin-left: 48px;
 }
 .compay_name {
-  font-size: 64px;
   margin: 0px;
   font-weight: 400;
 }
 .companu_moto {
-  font-size: 64px;
   margin: 0;
   font-weight: 400;
   opacity: 0.5;
