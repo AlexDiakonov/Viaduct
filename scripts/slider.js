@@ -19,7 +19,7 @@ const slideWidthApply = () => {
 
   const sliderWidth = slider.offsetWidth;
   const maxMargin = sliderWidth - sliderCont.offsetWidth;
-  const slideWidth = sliderView.offsetWidth * 0.8;
+  const slideWidth = sliderCont.offsetWidth * 0.8;
   let minHeight;
   if (mediaQuery.matches) {
     minHeight = slider.offsetWidth * 2.5;
@@ -47,6 +47,7 @@ const lastPoint = divOffset.top + minHeight;
 
 const swipeLeft = () => {
   if (currentSlide <= slidesArr.length - 1) {
+    console.log(slideWidthApply()[3]);
     currentSlide < slidesArr.length - 1
       ? (slider.style.marginLeft = `-${slideWidthApply()[3] * currentSlide}px`)
       : (slider.style.marginLeft = `-${slideWidthApply()[2]}px`);
