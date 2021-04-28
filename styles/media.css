@@ -1151,6 +1151,12 @@
   .video_content {
     height: 240px;
   }
+  .slider {
+    height: 610px;
+  }
+  .slider_item {
+    max-height: 590px;
+  }
   .view_port {
     top: 11%;
   }
