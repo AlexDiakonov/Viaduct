@@ -1152,7 +1152,8 @@
     height: 240px;
   }
   .slider {
-    height: 610px;
+    height: 560px;
+    margin-bottom: 30px;
   }
   .slider_item {
     max-height: 590px;
@@ -1175,6 +1176,9 @@
 @media screen and (max-width: 480px) {
   .ourTeam_list {
     flex-direction: column;
+  }
+  .view_port {
+    top: 9%;
   }
   .ourTeam_list_item:not(:last-child) {
     margin-right: 0px;
