@@ -18,6 +18,7 @@ const minHeightCalc = () => {
   const minHeight = slider.offsetWidth;
   return minHeight;
 };
+
 const slideWidthApply = () => {
   slidesArr.forEach((slide) => {
     slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
