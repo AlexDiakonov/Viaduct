@@ -14,19 +14,24 @@ const progressBar = document.querySelector(".progressBar");
 const mediaQuery = window.matchMedia("(max-width: 991px)");
 const slideWidthApply = () => {
   slidesArr.forEach((slide) => {
-    slide.style.width = `${sliderView.offsetWidth * 0.8}px`;
+    slide.style.width = `${sliderCont.offsetWidth * 0.8}px`;
   });
+  const slideMarginRight = parseInt(
+    window.getComputedStyle(slidesArr[0]).marginRight.slice(0, 2)
+  );
 
   const sliderWidth = slider.offsetWidth;
   const maxMargin = sliderWidth - sliderCont.offsetWidth;
   const slideWidth = sliderCont.offsetWidth * 0.8;
+  const slideAndMargin = slideWidth + slideMarginRight;
+  console.log(slideWidth);
   let minHeight;
   if (mediaQuery.matches) {
     minHeight = slider.offsetWidth * 2.5;
   } else {
     minHeight = slider.offsetWidth;
   }
-  return [sliderWidth, minHeight, maxMargin, slideWidth];
+  return [sliderWidth, minHeight, maxMargin, slideAndMargin];
 };
 
 slideWidthApply();
