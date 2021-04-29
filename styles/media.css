@@ -450,7 +450,7 @@
   }
   .mainpage_header {
     min-height: 50vh;
-    max-height: 55vh;
+    max-height: 56vh;
   }
 
   .parter_section,
@@ -1141,9 +1141,6 @@
   .faq_answer {
     font-size: 16px;
     line-height: 24px;
-  }
-  .mainpage_header {
-    max-height: 45vh;
   }
 }
 
