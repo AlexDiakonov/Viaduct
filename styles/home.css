@@ -292,7 +292,8 @@ footer {
   width: -moz-max-content;
   width: max-content;
   transition: 350ms ease-out all;
-  height: 665px;
+  height: 75vh;
+  margin-bottom: 35px;
 }
 body {
   overflow-x: hidden;
@@ -326,7 +327,8 @@ body main section {
   justify-content: space-around;
   max-width: 1136px;
   width: 100%;
-  max-height: 635px;
+  height: 100%;
+  background-size: cover;
   background-image: url(../images/sliderImages/slideBG.png);
   background-position: center;
   background-repeat: no-repeat;

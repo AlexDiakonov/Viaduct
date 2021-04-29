@@ -452,7 +452,9 @@
     min-height: 50vh;
     max-height: 56vh;
   }
-
+  .view_port {
+    top: 12%;
+  }
   .parter_section,
   .home_slider,
   .testimonials {
