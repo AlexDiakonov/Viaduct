@@ -24,7 +24,7 @@ const slideWidthApply = () => {
   const maxMargin = sliderWidth - sliderCont.offsetWidth;
   const slideWidth = sliderCont.offsetWidth * 0.8;
   const slideAndMargin = slideWidth + slideMarginRight;
-  console.log(slideWidth);
+
   let minHeight;
   if (mediaQuery.matches) {
     minHeight = slider.offsetWidth * 2.5;
