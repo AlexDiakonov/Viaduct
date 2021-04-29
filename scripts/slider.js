@@ -47,7 +47,6 @@ const lastPoint = divOffset.top + minHeight;
 
 const swipeLeft = () => {
   if (currentSlide <= slidesArr.length - 1) {
-    console.log(slideWidthApply()[3]);
     currentSlide < slidesArr.length - 1
       ? (slider.style.marginLeft = `-${slideWidthApply()[3] * currentSlide}px`)
       : (slider.style.marginLeft = `-${slideWidthApply()[2]}px`);
@@ -71,9 +70,18 @@ function scrollEvent() {
     .toString()
     .slice(0, 1);
   currentSlide = parseInt(currentSl);
-  const barWidth = (currentProgress / 100).toString().slice(2, 4);
+  const actualProgress = (currentProgress / 100).toString().slice(2, 4);
+  let barWidth;
+  if (parseInt(actualProgress) < 5) {
+    barWidth = 0 + "%";
+  }
+  if (parseInt(actualProgress) > 95) {
+    barWidth = 100 + "%";
+  } else {
+    barWidth = actualProgress + "%";
+  }
 
-  progressBar.style.width = barWidth + "%";
+  progressBar.style.width = barWidth;
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop) {
     swipeLeft();

@@ -1153,12 +1153,10 @@
   }
   .slider {
     height: 560px;
-    max-height: 67vh;
-    margin-bottom: 30px;
+    max-height: 73vh;
+    margin-bottom: 35px;
   }
-  .slider_item {
-    max-height: 590px;
-  }
+
   .view_port {
     top: 11%;
   }
