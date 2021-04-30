@@ -292,8 +292,8 @@ footer {
   width: -moz-max-content;
   width: max-content;
   transition: 350ms ease-out all;
-  height: 70vh;
-  margin-bottom: 35px;
+  height: 65vh;
+  margin-bottom: 25px;
 }
 body {
   overflow-x: hidden;
