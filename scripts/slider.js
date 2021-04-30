@@ -23,7 +23,7 @@ const slideWidthApply = () => {
   const sliderWidth = slider.offsetWidth;
   const maxMargin = sliderWidth - sliderCont.offsetWidth;
   const slideWidth = slidesArr[1].offsetWidth;
-  console.log(slideWidth);
+
   const slideAndMargin = slideWidth + slideMarginRight;
 
   let minHeight;
@@ -76,17 +76,20 @@ function scrollEvent() {
     .toString()
     .slice(0, 1);
   currentSlide = parseInt(currentSl);
-  const actualProgress = (currentProgress / 100).toString().slice(2, 4);
+  let actualProgress = 100;
+  actualProgress = Math.round(
+    parseInt((currentProgress / 100).toString().slice(2, 4))
+  );
   let barWidth;
   if (parseInt(actualProgress) < 5) {
-    barWidth = 0 + "%";
+    barWidth = 100 + "%";
   }
   if (parseInt(actualProgress) > 95) {
-    barWidth = 100 + "%";
+    barWidth = 0 + "%";
   } else {
-    barWidth = actualProgress + "%";
+    barWidth = 100 - actualProgress + "%";
   }
-
+  console.log(actualProgress);
   progressBar.style.width = barWidth;
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop) {

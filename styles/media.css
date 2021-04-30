@@ -414,7 +414,7 @@
 }
 @media screen and (max-width: 991px) {
   .slider_item {
-    width: 90vw;
+    width: 85vw;
   }
   h1 {
     font-size: 4.5rem;
