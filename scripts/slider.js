@@ -89,7 +89,7 @@ function scrollEvent() {
   } else {
     barWidth = 100 - actualProgress + "%";
   }
-  console.log(actualProgress);
+
   progressBar.style.width = barWidth;
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop) {
