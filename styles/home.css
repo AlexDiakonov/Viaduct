@@ -643,8 +643,27 @@ body main section {
   justify-content: flex-end;
   width: 100%;
   height: 50px;
+  overflow: hidden;
   background-image: url(../images/sliderImages/806514.svg);
   background-size: contain;
+  transition: 300ms linear all;
+}
+.showMore {
+  height: 0px;
+  width: 100%;
+
+  transition: 200ms linear all;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 10px;
+}
+.show_now {
+  border: 1px solid #fff;
+  height: 100%;
+
+  background: #191919;
+  width: 80%;
+  margin: 0 auto;
 }
 .progressBar {
   height: 50px;

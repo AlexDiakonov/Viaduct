@@ -3,7 +3,6 @@ const slider = document.querySelector(".slider");
 const sliderCont = document.querySelector(".slider_borders");
 // const sliderWidth = slider.offsetWidth;
 const sliderWrapper = document.querySelector(".slider_wrapper");
-
 const slidesArr = document.querySelectorAll(".slider_item");
 const serviceSection = document.querySelector(".services_section");
 const partnerSection = document.querySelector(".parter_section");
@@ -84,6 +83,7 @@ function scrollEvent() {
   if (parseInt(actualProgress) < 5) {
     barWidth = 100 + "%";
   }
+
   if (parseInt(actualProgress) > 95) {
     barWidth = 0 + "%";
   } else {
