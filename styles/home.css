@@ -316,7 +316,7 @@ body main section {
 .view_port {
   position: -webkit-sticky;
   position: sticky;
-  top: 18%;
+  top: 13%;
   overflow-x: hidden;
   width: 100%;
   transition: 400ms ease-out all;
@@ -326,7 +326,7 @@ body main section {
   flex-direction: column;
   justify-content: space-around;
   max-width: 1136px;
-  width: 100%;
+  width: 80vw;
   height: 100%;
   background-size: cover;
   background-image: url(../images/sliderImages/slideBG.png);

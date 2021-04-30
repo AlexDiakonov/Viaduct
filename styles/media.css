@@ -101,7 +101,7 @@
 
   /* home page */
   .view_port {
-    top: 16%;
+    top: 13%;
   }
   .main_menu a {
     font-size: 56px;
@@ -413,6 +413,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .slider_item {
+    width: 90vw;
+  }
   h1 {
     font-size: 4.5rem;
   }
