@@ -12,9 +12,6 @@ const progressBar = document.querySelector(".progressBar");
 
 const mediaQuery = window.matchMedia("(max-width: 991px)");
 const slideWidthApply = () => {
-  // slidesArr.forEach((slide) => {
-  //   slide.style.width = `${sliderCont.offsetWidth * 0.8}px`;
-  // });
   const slideMarginRight = parseInt(
     window.getComputedStyle(slidesArr[0]).marginRight.slice(0, 2)
   );
@@ -113,3 +110,20 @@ const sliderObserver = new IntersectionObserver(function (entries, observer) {
   });
 }, options);
 sliderObserver.observe(sliderView);
+
+// const btnView = document.querySelector(".anim_btn_sect");
+// console.log(btnView);
+// let showBtnOpt = {
+//   threshold: 1,
+// };
+// const btnObserver = new IntersectionObserver(function (entr, obsr) {
+//   console.log(entr);
+//   entr.forEach((en) => {
+//     if (en.isIntersecting) {
+//       console.log("hurrah!!!");
+//     } else {
+//       console.log("stop cherrying");
+//     }
+//   });
+// }, showBtnOpt);
+// btnObserver.observe(btnView);
